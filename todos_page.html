@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODOListApp</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/commonStyle.css">
+    <link rel="stylesheet" href="./css/todoStyle.css">
+</head>
+<body>
+    <!-- modal -->
+    <div id="modal_page" class="modal_page delete">
+        <div class="modal_body">
+            <section class="modal_body_header">
+                <span class="icon_danger"><i class="bi bi-exclamation-triangle-fill"></i></span>
+                <strong class="warning_txt">delete</strong>
+            </section>
+            <hr>
+            <section class="modal_body_main">
+                <p>do you want to delete this item??</p>
+                <span id="modalMainText">see my mom</span>
+                <span id="modalMainTime">5/21/2021</span>
+            </section>
+            <section class="modal_body_footer">
+                <button id="deleteBtnModal">delete</button>
+                <button id="cancelBtnModal">cancel</button>
+            </section>
+        </div>
+    </div>
+    <!-- end modal -->
+    <!-- header -->
+    <header class="header">
+        <nav>
+            <figure class="logo_container">
+                <img src="./img/side26 logo.png" alt="logo">
+            </figure>
+            <ul class="nav_ul">
+                <li class="nav_item"><a href="./index.html">home</a></li>
+                <li class="nav_item"><a href="#">todos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--end header -->
+    <!-- main -->
+    <main>
+        <div class="container">
+            <div id="container">
+                <div class="loading_con">
+
+                </div>
+                <!-- <li class="li">
+                    <div class="li_header">
+                        <input type="checkbox">
+                        <strong id="listTxt">see my mom</strong>
+                        <span id="dueTime">12/5/2021</span>
+                    </div>
+                    <div class="btnCon">
+                        <button id="editBtn"><span><i class="bi bi-pencil-square"></i></span></button>
+                        <button id="deleteBtn"><span><i class="bi bi-trash-fill"></i></i></span></button>
+                    </div>
+                    <p id="descript">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae, laborum.</p>
+                </li><li class="li">
+                    <div class="li_header">
+                        <input type="checkbox">
+                        <strong id="listTxt">see my mom</strong>
+                        <span id="dueTime">12/5/2021</span>
+                    </div>
+                    <div class="btnCon">
+                        <button id="editBtn"><span><i class="bi bi-pencil-square"></i></span></button>
+                        <button id="deleteBtn"><span><i class="bi bi-trash-fill"></i></i></span></button>
+                    </div>
+                    <p id="descript">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae, laborum.</p>
+                </li><li class="li">
+                    <div class="li_header">
+                        <input type="checkbox">
+                        <strong id="listTxt">see my mom</strong>
+                        <span id="dueTime">12/5/2021</span>
+                    </div>
+                    <div class="btnCon">
+                        <button id="editBtn"><span><i class="bi bi-pencil-square"></i></span></button>
+                        <button id="deleteBtn"><span><i class="bi bi-trash-fill"></i></i></span></button>
+                    </div>
+                    <p id="descript">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae, laborum.</p>
+                </li>
+                <li class="li">
+                    <div class="li_header">
+                        <input type="checkbox">
+                        <strong id="listTxt">see my mom</strong>
+                        <span id="dueTime">12/5/2021</span>
+                    </div>
+                    <div class="btnCon">
+                        <button id="editBtn"><span><i class="bi bi-pencil-square"></i></span></button>
+                        <button id="deleteBtn"><span><i class="bi bi-trash-fill"></i></i></span></button>
+                    </div>
+                    <p id="descript">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae, laborum.</p>
+                </li>
+                <li class="li">
+                    <div class="li_header">
+                        <input type="checkbox">
+                        <strong id="listTxt">see my mom</strong>
+                        <span id="dueTime">12/5/2021</span>
+                    </div>
+                    <div class="btnCon">
+                        <button id="editBtn"><span><i class="bi bi-pencil-square"></i></span></button>
+                        <button id="deleteBtn"><span><i class="bi bi-trash-fill"></i></i></span></button>
+                    </div>
+                    <p id="descript">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae, laborum.</p>
+                </li> -->
+            </div>
+
+        </div>
+    </main>
+    <!--end main -->
+    <!-- footer -->
+    <footer >
+        <ul id="page_btns" class="page_btns">
+            <!-- <li class="page_btn active" disabled><a  disabled class="active" href="#">1</a></li>
+            <li class="page_btn"><a href="#">2</a></li>
+            <li class="page_btn"><a href="#">3</a></li>
+            <li class="page_btn"><a href="#">4</a></li>
+            <li class="page_btn"><a href="#">5</a></li>
+            <li class="page_btn"><a href="#">6</a></li> -->
+        </ul>
+    </footer>
+    <!-- end footer -->
+</body>
+<script src="./js/todoScript.js"></script>
+</html>

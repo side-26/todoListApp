@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --bg-color: #f0f1f3;
+    --primary-color: #1465ef;
+    --trash-color: #fb6d85;
+    --text-color: #191919;
+    --white-color:#fff;
+    --border-color:#ccc;
+    --time-color:#a3a2a2;
+    --toast-bg:#2CAF1E;
+  }
+  body{
+      background-color: var(--bg-color);
+  }
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--primary-color);
+    align-items: center;
+    padding: 0 2rem;
+}
+ul{
+    list-style-type: none;
+    display: flex;
+    order: 1;
+    justify-content: space-between;
+    width: 10%;
+    margin: 0;
+}
+ul li{
+    padding: .5rem;
+    transition: all .35s ease-in-out;
+    border-radius: 4px;
+}
+a{
+    color: var(--white-color);
+}
+ul li:hover a{
+    color: var(--primary-color);
+    text-decoration: none;
+}
+ul li:hover{
+    background-color: var(--white-color);
+}
+.logo_container{
+    order: 2;
+    width: 60px;
+    height: 60px;
+}
+.logo_container img{
+    width: 100%;
+    height: 100%;
+}
+a{
+    text-decoration: none;
+}
+.hidden{
+    display: none;
+}
+/* 404page */
+.error_container{
+    height: 600px;
+}
+
+.error_container,.mystyle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.mystyle>h1{
+    color: var(--text-color);
+    font-size: 10rem;
+}
+.mystyle>h1>span{
+    color: var(--primary-color);
+    
+}
+.mystyle>p{
+    font-size: 2rem;
+    color: var(--text-color);
+}
+.problemTeller{
+    height: 3.1rem;
+    width: 20rem;
+    border: 2px solid var(--time-color);
+    border-radius: 2rem;
+    background-color: var(--white-color);
+    position: relative;
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.problemTeller>input{
+    background-color: transparent;
+    border: none;
+    padding-left: 1rem;
+}
+.problemTeller>input:focus{
+    outline: none;
+}
+.problemTeller>button[type="submit"]{
+    height: 95%;
+    width: 25%;
+    /* position: absolute; */
+    background-color: transparent;
+    color: var(--white-color);
+    border: none;
+    /* right: 0; */
+    /* top: 0; */
+    /* border: 1px solid var(--time-color); */
+    /* border: none; */
+    border-radius: 2rem;
+    /* margin: 0!important; */
+    transition: all .35s ease-in-out;
+    text-transform: capitalize;
+    margin-right: 1px;
+    color: var(--text-color);
+}
+.problemTeller>button[type="submit"]:hover{
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: var(--white-color);
+}
+.link{
+    color: var(--primary-color); 
+    margin-top: 2rem;
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+.link:hover{
+    text-decoration: underline;
+}
+/* spinner loading */
+.loading_con{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+.loading_con::after{
+    margin-top: 10rem;
+    content: '';
+    width: 12rem;
+    height: 12rem;
+    border: 1.5rem solid #fff;
+    border-top-color: var(--primary-color);
+    /* background-color: red; */
+    border-radius: 50%;
+    animation: spinnerLoading 1s linear  infinite;
+}
+@keyframes spinnerLoading{
+    to{
+        transform: rotate(1turn);
+    }
+}

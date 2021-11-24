@@ -1,0 +1,84 @@
+@import url(./commonStyle.css);
+
+main{
+    margin-top: 8rem;
+}
+
+.input_container{
+    /* margin: 1.5rem; */
+    width: 70%;
+    margin: 1.5rem auto;
+}
+input{
+    width: 100%;
+    border: none;
+    padding: .8rem 0;
+    border-radius: 4px;
+    padding-left: .8rem;
+    color: var(--text-color);
+}
+
+label{
+    display: block;
+    text-transform: capitalize;
+}
+.sub_con{
+    margin-top: 3rem;
+}
+input[
+    type="submit"
+]{
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    font-size: 1.3rem;
+    text-transform: capitalize;
+    
+}
+/* toast */
+.toast_con{
+    background-color:var(--toast-bg) ;
+    display: inline-block;
+    color: var(--white-color);
+    margin: 1rem;
+    border-radius: 3px;
+}
+.toast_body{
+    padding: 1.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    box-sizing: border-box;
+    
+}
+.toast_body>p{
+    margin: 0 .5rem;
+    
+
+}
+.toastTime{
+    position: relative;
+}
+.toastTime::before{
+    content: "";
+    width: 100%;
+    height: 6px;
+    background-color: #76DC14;
+    position: absolute;
+    display: block;
+    bottom: 0;
+    left: 0;
+    transition: all 3s ease-in-out;
+    animation-name: time;
+    animation-duration: 3s;
+
+}
+.hidden{
+    display: none;
+}
+@keyframes time{
+  
+    100%{
+        width:0 ;
+    }
+}

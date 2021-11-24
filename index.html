@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODOListApp</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/commonStyle.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!-- header -->
+    <header class="header">
+        <nav>
+            <figure class="logo_container">
+                <img src="./img/side26 logo.png" alt="logo">
+            </figure>
+            <ul class="nav_ul">
+                <li class="nav_item"><a href="#">home</a></li>
+                <li class="nav_item"><a href="./todos_page.html">todos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--end header -->
+    <main>
+        <div class="container">
+            <form >
+                <section class="input_container">
+                    <label for="todoTxt">title*</label>
+                    <input type="text" name="todoTxt" id="todoTxt" placeholder="what will you do today??">
+                    <span id="todoTxt_err"></span>
+                </section>
+                <section class="input_container">
+                    <label for="todoDesc">description</label>
+                    <input type="text" name="todoDesc" id="todoDesc" placeholder="some information">
+                </section>
+                <section class="input_container">
+                    <label for="todoTime">due time*</label>
+                    <input type="date" name="todoTime" id="todoTime" value="2021-11-06">
+                    <span id="todoTime_err"></span>
+                </section>
+                <section class="input_container sub_con">
+                    <input type="submit" id="theSubAdd"></input>
+                    <input type="submit" class="hidden" value="edit"  id="theSubEdit">
+                </section>
+            </form>
+        </div>
+    </main>
+    <!-- footer -->
+    <footer>
+        <!-- <p>powerd by <strong>Side26</strong>;</p> -->
+    </footer>
+    <!-- footer end -->
+    <!-- toast start -->
+    <div onclick="hide(this)" id="toast_con" class="toast_con hidden">
+        <div id="toast_body" class="toast_body">
+            <p >new todo creates successfully!!!</p>
+            <!-- <a href=""><span class="close_btn"><i class="bi bi-x-circle"></i></span></a> -->
+        </div>
+    </div>
+    <!-- toast end -->
+
+</body>
+<script src="./js/homeScript.js"></script>
+</html>
