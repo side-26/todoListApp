@@ -27,6 +27,11 @@ ul{
 .delete{
     display: none!important;
 }
+#descript{
+    overflow: auto;
+    width: 90%;
+    max-height: 5rem;
+}
 .btnCon{
     width: 100%;
     display: flex;
@@ -70,6 +75,7 @@ footer{
 .page_btns{
     justify-content: center;
     width: 100%;
+    flex-wrap: wrap;
 
 }
 .page_btn{
@@ -171,4 +177,9 @@ footer{
 }
 .modal_body_footer button:last-child{
     background-color: var(--primary-color);
+}
+@media only screen and (max-width: 500.98px){
+    #dueTime{
+        display: none;
+    }
 }

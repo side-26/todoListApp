@@ -34,16 +34,29 @@ ul li{
     padding: .5rem;
     transition: all .35s ease-in-out;
     border-radius: 4px;
+    position: relative;
 }
-a{
+ul li a{
     color: var(--white-color);
-}
-ul li:hover a{
-    color: var(--primary-color);
     text-decoration: none;
 }
-ul li:hover{
+ul li::after{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 0;
+    height: .2rem;
     background-color: var(--white-color);
+    left: 0;
+    bottom: -10%;
+    transition: all 0.3s ease-in-out;
+}
+ul li:hover::after{
+    width: 100%;
+}
+ul li:hover a{
+    color: var(--white-color);
+    text-decoration: none;
 }
 .logo_container{
     order: 2;
