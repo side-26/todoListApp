@@ -1,46 +1,62 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
+
 :root {
     --bg-color: #f0f1f3;
     --primary-color: #1465ef;
     --trash-color: #fb6d85;
     --text-color: #191919;
-    --white-color:#fff;
-    --border-color:#ccc;
-    --time-color:#a3a2a2;
-    --toast-bg:#2CAF1E;
-  }
-  body{
-      background-color: var(--bg-color);
-  }
-nav{
+    --white-color: #fff;
+    --border-color: #ccc;
+    --time-color: #a3a2a2;
+    --toast-bg: #2CAF1E;
+    --disabled: #9ca3af;
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%
+}
+
+nav {
     display: flex;
     justify-content: space-between;
     background-color: var(--primary-color);
     align-items: center;
     padding: 0 2rem;
 }
-ul{
+
+ul {
     list-style-type: none;
     display: flex;
+    align-items: center;
     order: 1;
     justify-content: space-between;
     width: 10%;
     margin: 0;
 }
-ul li{
+
+ul li {
     padding: .5rem;
     transition: all .35s ease-in-out;
     border-radius: 4px;
     position: relative;
 }
-ul li a{
+
+ul li a {
     color: var(--white-color);
     text-decoration: none;
 }
-ul li::after{
+
+ul li::after {
     content: "";
     position: absolute;
     display: block;
@@ -51,52 +67,64 @@ ul li::after{
     bottom: -10%;
     transition: all 0.3s ease-in-out;
 }
-ul li:hover::after{
+
+ul li:hover::after {
     width: 100%;
 }
-ul li:hover a{
+
+ul li:hover a {
     color: var(--white-color);
     text-decoration: none;
 }
-.logo_container{
+
+.logo_container {
     order: 2;
     width: 60px;
     height: 60px;
 }
-.logo_container img{
+
+.logo_container img {
     width: 100%;
     height: 100%;
 }
-a{
+
+a {
     text-decoration: none;
 }
-.hidden{
-    display: none;
+
+.hidden {
+    display: none !important;
 }
+
 /* 404page */
-.error_container{
+.error_container {
     height: 600px;
 }
 
-.error_container,.mystyle{
+.error_container,
+.mystyle {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-.mystyle>h1{
+
+.mystyle>h1 {
     color: var(--text-color);
     font-size: 10rem;
 }
-.mystyle>h1>span{
+
+.mystyle>h1>span {
     color: var(--primary-color);
-    
+
 }
-.mystyle>p{
+
+.mystyle>p {
     font-size: 2rem;
     color: var(--text-color);
 }
-.problemTeller{
+
+.problemTeller {
     height: 3.1rem;
     width: 20rem;
     border: 2px solid var(--time-color);
@@ -108,15 +136,27 @@ a{
     align-items: center;
     justify-content: space-between;
 }
-.problemTeller>input{
+
+.problemTeller>input {
     background-color: transparent;
     border: none;
     padding-left: 1rem;
 }
-.problemTeller>input:focus{
+
+.problemTeller>input:focus {
     outline: none;
 }
-.problemTeller>button[type="submit"]{
+
+button {
+    border: none;
+}
+
+button:disabled {
+    background-color: var(--disabled) !important;
+    color: var(--text-color) !important;
+}
+
+.problemTeller>button[type="submit"] {
     height: 95%;
     width: 25%;
     /* position: absolute; */
@@ -134,28 +174,33 @@ a{
     margin-right: 1px;
     color: var(--text-color);
 }
-.problemTeller>button[type="submit"]:hover{
+
+.problemTeller>button[type="submit"]:hover {
     background-color: var(--primary-color);
     border-color: var(--primary-color);
     color: var(--white-color);
 }
-.link{
-    color: var(--primary-color); 
+
+.link {
+    color: var(--primary-color);
     margin-top: 2rem;
     font-size: 2rem;
     text-transform: capitalize;
 }
-.link:hover{
+
+.link:hover {
     text-decoration: underline;
 }
+
 /* spinner loading */
-.loading_con{
+.loading_con {
     display: flex;
     justify-content: center;
     width: 100%;
     height: 100%;
 }
-.loading_con::after{
+
+.loading_con::after {
     margin-top: 10rem;
     content: '';
     width: 12rem;
@@ -164,10 +209,11 @@ a{
     border-top-color: var(--primary-color);
     /* background-color: red; */
     border-radius: 50%;
-    animation: spinnerLoading 1s linear  infinite;
+    animation: spinnerLoading 1s linear infinite;
 }
-@keyframes spinnerLoading{
-    to{
+
+@keyframes spinnerLoading {
+    to {
         transform: rotate(1turn);
     }
 }

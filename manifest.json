@@ -1,0 +1,89 @@
+{
+    "name": "TODO App Pwa",
+    "short_name":"TODO Pwa",
+    "start_url":"/",
+    "display":"standalone",
+    "theme_color": "#1465ef",
+    "background_color ":"#1465ef",
+    "background-color":"#1465ef",
+    "icons":[
+            {
+                "src":"./assets/img/icons/icons-512.png",
+                "type":"image/png",
+                "sizes":"512x512"
+            },
+            {
+                "src":"./assets/img/icons/icons-384.png",
+                "type":"image/png",
+                "sizes":"384x384"
+            },
+            {
+                "src":"./assets/img/icons/icons-192.png",
+                "type":"image/png",
+                "sizes":"192x192"
+            },
+            {
+                "src":"./assets/img/icons/icons-128.png",
+                "type":"image/png",
+                "sizes":"128x128"
+            },
+            {
+                "src":"./assets/img/icons/icons-84.png",
+                "type":"image/png",
+                "sizes":"84x84"
+            },
+            {
+                "src":"./assets/img/icons/icons-72.png",
+                "type":"image/png",
+                "sizes":"72x72"
+            },
+            {
+                "src":"./assets/img/icons/icons-48.png",
+                "type":"image/png",
+                "sizes":"48x48"
+            },{
+                "src":"./assets/img/icons/icons-512.png",
+                "type":"image/png",
+                "sizes":"512x512",
+                "purpose": "maskable"
+            },
+            {
+                "src":"./assets/img/icons/icons-384.png",
+                "type":"image/png",
+                "sizes":"384x384",
+                "purpose": "maskable"
+            },
+            {
+                "src":"./assets/img/icons/icons-192.png",
+                "type":"image/png",
+                "sizes":"192x192",
+                "purpose": "maskable"
+            },
+            {
+                "src":"./assets/img/icons/icons-128.png",
+                "type":"image/png",
+                "sizes":"128x128",
+                "purpose": "maskable"
+            },
+            {
+                "src":"./assets/img/icons/icons-84.png",
+                "type":"image/png",
+                "sizes":"84x84",
+                "purpose": "maskable"
+            },
+            {
+                "src":"./assets/img/icons/icons-72.png",
+                "type":"image/png",
+                "sizes":"72x72",
+                "purpose": "maskable"
+            },
+            {
+                "src":"./assets/img/icons/icons-48.png",
+                "type":"image/png",
+                "sizes":"48x48",
+                "purpose": "maskable"
+            }
+            
+
+    ]
+ }

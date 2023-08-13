@@ -1,5 +1,5 @@
 const container = document.getElementById("container");
-const modal_page = document.getElementById("modal_page");
+const modalPage = document.getElementById("modal_page");
 const cancelBtnModal = document.getElementById("cancelBtnModal");
 const modalMainText = document.getElementById("modalMainText");
 const modalMainTime = document.getElementById("modalMainTime");
@@ -97,24 +97,18 @@ function removeItem(evt, id) {
     evt.parentElement.previousElementSibling.children[1].textContent;
   modalMainTime.textContent =
     evt.parentElement.previousElementSibling.children[2].textContent;
-  modal_page.classList.remove("delete");
-  modal_page.querySelectorAll("button")[0].setAttribute("idValue", id);
-  // console.log(modal_page.querySelectorAll("button")[0]);
+  modalPage.classList.remove("delete");
+  modalPage.classList.remove("hidden");
+  modalPage.querySelectorAll("button")[0].setAttribute("idValue", id);
+  // console.log(modalPage.querySelectorAll("button")[0]);
   deleteBtnModal.addEventListener("click", function (evt) {
     const x = evt.target.getAttribute("idValue");
     remove(`https://60b77f8f17d1dc0017b8a2c4.mockapi.io/todos/${x}`);
-    // if(document.getElementsByClassName("active").length<3&&document.getElementsByClassName("page_btn").length>1){
-    //   const url = new URL(window.location.href);
-    //   let page_no=url.searchParams.get("page");
-    //   window.location.href=`./todos_page.html?page=${page_no-1}`;
-    // }else if(document.getElementsByClassName("active").length<3&&document.getElementsByClassName("page_btn").length==1){
-    //   window.location.href=`./todos_page.html?page=1`;
-    // }
-    modal_page.classList.add("delete");
+    modalPage.classList.add("delete");
   });
 }
 cancelBtnModal.addEventListener("click", function () {
-  modal_page.classList.add("hidden");
+  modalPage.classList.add("hidden");
 });
 
 async function remove(url) {

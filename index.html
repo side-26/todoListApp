@@ -1,26 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TODOListApp</title>
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-      crossorigin="anonymous"
-    />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="./css/commonStyle.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#1465ef"/>
+    <link rel="stylesheet" href="./assets/css/commonStyle.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="apple-touch-startup-image" href="./assets/img/icons/icons-128.png">
 </head>
+
 <body>
     <!-- header -->
     <header class="header">
         <nav>
             <figure class="logo_container">
-                <img src="./img/side26 logo.png" alt="logo">
+                <img src="./assets/img/side26 logo.png" alt="logo">
             </figure>
             <ul class="nav_ul">
                 <li class="nav_item"><a href="#">home</a></li>
@@ -31,7 +32,7 @@
     <!--end header -->
     <main>
         <div class="container">
-            <form >
+            <form>
                 <section class="input_container">
                     <label for="todoTxt">title*</label>
                     <input type="text" name="todoTxt" id="todoTxt" placeholder="what will you do today??">
@@ -47,8 +48,8 @@
                     <span id="todoTime_err"></span>
                 </section>
                 <section class="input_container sub_con">
-                    <input type="submit" id="theSubAdd"></input>
-                    <input type="submit" class="hidden" value="edit"  id="theSubEdit">
+                    <button type="submit" id="theSubAdd">submit</button>
+                    <button type="submit" class="hidden" value="edit" id="theSubEdit">
                 </section>
             </form>
         </div>
@@ -61,12 +62,13 @@
     <!-- toast start -->
     <div onclick="hide(this)" id="toast_con" class="toast_con hidden">
         <div id="toast_body" class="toast_body">
-            <p >new todo creates successfully!!!</p>
+            <p>new todo creates successfully!!!</p>
             <!-- <a href=""><span class="close_btn"><i class="bi bi-x-circle"></i></span></a> -->
         </div>
     </div>
     <!-- toast end -->
 
 </body>
-<script src="./js/homeScript.js"></script>
+<script src="./assets/js/homeScript.js"></script>
+
 </html>

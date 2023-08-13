@@ -1,15 +1,16 @@
 @import url(./commonStyle.css);
 
-main{
+main {
     margin-top: 8rem;
 }
 
-.input_container{
+.input_container {
     /* margin: 1.5rem; */
     width: 70%;
     margin: 1.5rem auto;
 }
-input{
+
+input {
     width: 100%;
     border: none;
     padding: .8rem 0;
@@ -18,48 +19,61 @@ input{
     color: var(--text-color);
 }
 
-label{
+label {
     display: block;
     text-transform: capitalize;
 }
-.sub_con{
+
+.sub_con {
     margin-top: 3rem;
 }
-input[
-    type="submit"
-]{
+
+input[ type="submit"
+
+] {
     background-color: var(--primary-color);
     color: var(--white-color);
     font-size: 1.3rem;
     text-transform: capitalize;
-    
+
 }
+
 /* toast */
-.toast_con{
-    background-color:var(--toast-bg) ;
+.toast_con {
+    background-color: var(--toast-bg);
     display: inline-block;
     color: var(--white-color);
     margin: 1rem;
     border-radius: 3px;
+    top: 0;
+    left: 0;
+    transform: translate(100%, 100%);
+    z-index: 2000000;
 }
-.toast_body{
+
+.toast_body {
+
     padding: 1.5rem 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative;
     box-sizing: border-box;
-    
-}
-.toast_body>p{
-    margin: 0 .5rem;
-    
 
 }
-.toastTime{
-    position: relative;
+
+.toast_body>p {
+    margin: 0 .5rem;
+
+
 }
-.toastTime::before{
+
+.toastTime {
+    position: absolute;
+    cursor: pointer;
+}
+
+.toastTime::before {
     content: "";
     width: 100%;
     height: 6px;
@@ -73,12 +87,22 @@ input[
     animation-duration: 3s;
 
 }
-.hidden{
+.sub_con button{
+    width: 100%;
+    height: 3rem;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border-radius: .5rem;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+.hidden {
     display: none;
 }
-@keyframes time{
-  
-    100%{
-        width:0 ;
+
+@keyframes time {
+
+    100% {
+        width: 0;
     }
 }

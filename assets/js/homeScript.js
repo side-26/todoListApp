@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded",function(){
            body: JSON.stringify(data),
          })
            .then((response) => {response.json()
-            if(response.status>300){
+            if(response.status===404){
               location.href="./404.html";
             }
           })
