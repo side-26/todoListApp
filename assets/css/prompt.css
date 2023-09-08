@@ -1,0 +1,26 @@
+@import url('./commonStyle.css');
+
+button {
+    background-color: transparent;
+    color: var(--white-color);
+}
+
+.install_prompt {
+    display: flex;
+    position: fixed;
+    background-color: var(--primary-color);
+    padding: .5rem 1.2rem;
+    border-radius: 1rem;
+    top: 0;
+    right: 0%;
+    transform: translate(0, 210%);
+    /* color: var(--white-color); */
+}
+
+.prompt_body {
+    background-color: transparent;
+}
+
+.hidden {
+    display: none !important;
+}
